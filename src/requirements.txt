@@ -1,0 +1,12 @@
+langchain-ollama
+
+langchain-huggingface
+text-generation
+transformers
+google-search-results
+numexpr
+langchainhub
+sentencepiece
+jinja2
+bitsandbytes
+accelerate

@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  llama-service:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.llama
+    ports:
+      - "8081:8080"
+    environment:
+      - MODEL_NAME=Meta-Llama-3-8B-Instruct.Q4_K_S.gguf
+    volumes:
+      - ../models/llama.cpp/models:/models
+    # entrypoint:
+    #   sleep 3000000
+
+  mistral-service:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.mistral
+    ports:
+      - "8082:8080"
+    environment:
+      - MODEL_NAME=mistral-7b-instruct-v0.2.Q4_K_M.gguf
+    volumes:
+      - ../models/llama.cpp/models:/models
+  
+  gpt4all-service:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.gpt4all
+    ports:
+      - "8083:8080"
+    environment:
+      - MODEL_NAME=gpt4all-falcon-newbpe-q4_0.gguf
+    volumes:
+      - ../models/llama.cpp/models:/models
