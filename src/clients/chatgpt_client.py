@@ -2,8 +2,8 @@
 Created on 19 jul 2024
 
 Referencias:
- - https://ollama.com/
- - https://python.langchain.com/docs/integrations/chat/ollama/
+ - https://openai.com/
+ - https://python.langchain.com/docs/integrations/chat/openai/
 
 @author: chispas
 '''
