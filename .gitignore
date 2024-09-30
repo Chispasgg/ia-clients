@@ -2,6 +2,7 @@
 conf/
 dockers/models/
 dockers/ollama/ollama-webui/
+src/ejemplos/
 
 # eclipse
 .pydevproject
